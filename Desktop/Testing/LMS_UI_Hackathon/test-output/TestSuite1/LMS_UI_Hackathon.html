@@ -1,0 +1,1429 @@
+<html>
+<head>
+<title>TestNG:  LMS_UI_Hackathon</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LMS_UI_Hackathon</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/47/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 23 18:19:01 MDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7388 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can save the attendance details", "Optional[Different attendance functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace829239469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace829239469'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can create notification", "Optional[Submit(send) notifcation by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1617784108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1617784108'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin will be navigated to manage users(admin) page when clicked on eye icon", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1562516256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1562516256'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can manage students submission by unselecting Make Grade Viisble", "Optional[Assignment functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1861043945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1861043945'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can be able to delete Unregistered user", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1055974774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055974774'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check functionality of Pagination at Manage Attendance(Admin and Class Staff) page", "Optional[Pagination]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1027158270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1027158270'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can upload Resources", "Optional[Different Upload features by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace488388565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace488388565'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can reset the attendance details", "Optional[Different attendance functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1106043431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1106043431'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can Delete existing Class for particular Batch", "Optional[Different Classes Modifications By Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1901009476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1901009476'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can be able to edit Unregistered user", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace768856989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace768856989'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can add new program details", "Optional[Program Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace341742991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace341742991'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether user can delete  a particular assignment", "Optional[Assignment functions performed by User]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace115816820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace115816820'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can edit particular batch in batches list", "Optional[Batch Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1592970214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1592970214'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can delete particular batch from batches list", "Optional[Batch Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1552595422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1552595422'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can search users by giving Email or Batch or Skill or program", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1377543055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1377543055'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can create notification", "Optional[Submit(send) notifcation by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1769640623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769640623'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can edit registered user in Manage users(admin) page", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace251546027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace251546027'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether user can submit assignment", "Optional[Assignment functions performed by User]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace535708280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace535708280'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can delete particular registered user in Manage users(admin) page", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace359917733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace359917733'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can edit program details", "Optional[Program Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1135026238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1135026238'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void testrunner.ExtentTestNG.runScenario(io.cucumber.testng.PickleWrapper) throws java.lang.Throwable] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: runScenario([Parameter{index=0, type=io.cucumber.testng.PickleWrapper, declaredAnnotations=[]}])
+Arguments: [(io.cucumber.testng.PickleWrapperImpl) &quot;Check whether Admin can add New assignments for particular Batch&quot;,(io.cucumber.testng.FeatureWrapperImpl) &quot;Optional[Assignment functions performed by Admin]&quot;]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1678413715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1678413715'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void testrunner.ExtentTestNG.runScenario(io.cucumber.testng.PickleWrapper) throws java.lang.Throwable] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: runScenario([Parameter{index=0, type=io.cucumber.testng.PickleWrapper, declaredAnnotations=[]}])
+Arguments: [(io.cucumber.testng.PickleWrapperImpl) &quot;Check whether Admin can add New assignments for particular Batch&quot;,(io.cucumber.testng.FeatureWrapperImpl) &quot;Optional[Assignment functions performed by Admin]&quot;]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can add New assignments for particular Batch", "Optional[Assignment functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1637627206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637627206'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can view the attendance details", "Optional[Different attendance functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1991193781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1991193781'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can manage students submission by selecting Make Grade Visible", "Optional[Assignment functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace494367851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace494367851'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether user can edit a particular assignment", "Optional[Assignment functions performed by User]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2036353726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2036353726'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Login is successful with invalid credentials", "Optional[feature to test Login functionality]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1131963943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1131963943'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can add new program details", "Optional[Program Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1771935420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771935420'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can open  upload Recording", "Optional[Different Upload features by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1560844138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560844138'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can be able to edit Unregistered user", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1446081235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1446081235'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can add batch to batches list", "Optional[Batch Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace914930347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace914930347'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check  whether Admin can be able  to view New Unassigned user", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace126791597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace126791597'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Login is successful with valid credentials", "Optional[feature to test Login functionality]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1562883265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1562883265'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can edit particular batch in batches list", "Optional[Batch Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace963884756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace963884756'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check functionality of Pagination at Manage user(Admin) page", "Optional[Pagination]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1387462740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387462740'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Login is successful with invalid credentials", "Optional[feature to test Login functionality]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace315059566", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace315059566'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Login is successful with valid credentials", "Optional[feature to test Login functionality]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace146540182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace146540182'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can delete the program", "Optional[Program Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1510967269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1510967269'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can Delete existing assignments for particular Batch", "Optional[Assignment functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1977656652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1977656652'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can ADD New Class for Particular Batch", "Optional[Different Classes Modifications By Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2068126708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2068126708'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can add batch to batches list", "Optional[Batch Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace438772947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438772947'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can search users by giving Email or Batch or Skill or program", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1810327249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810327249'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LMSWebsite Launch", "Optional[feature to test Launch LMS website]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace817896503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace817896503'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can add Edit assignments for particular Batch", "Optional[Assignment functions performed by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1731654671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1731654671'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can Edit existing Class for particular Batch", "Optional[Different Classes Modifications By Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1521848908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1521848908'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking login hyperlink is working", "Optional[feature to test Login functionality]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace590966720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace590966720'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether admin can edit program details", "Optional[Program Functions]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1214115553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1214115553'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+<tr>
+<td title='testrunner.ExtentTestNG.runScenario()'><b>runScenario</b><br>Test class: testrunner.ExtentTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check whether Admin can edit registered user in Manage users(admin) page", "Optional[User modifications by Admin]"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1320566216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1320566216'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\navee\Desktop\Testing\LMS_UI_Hackathon\src\main\resources\drivers\msedgedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:40)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:171)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:41)
+	at base.Base.initialize(Base.java:70)
+	at stepdefinition.LaunchStep.setup(LaunchStep.java:31)
+</pre></div></td>
+<td>0</td>
+<td>testrunner.ExtentTestNG@70e02081</td></tr>
+</table><p>
+</body>
+</html>

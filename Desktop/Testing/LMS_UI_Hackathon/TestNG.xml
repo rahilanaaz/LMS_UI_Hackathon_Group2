@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite1" verbose="10" parallel ="tests" thread-count="3">
+<listeners>
+	<listener class-name="extentreport.ExtentReportListener"></listener>
+	
+</listeners>
+  <test name="LMS_UI_Hackathon_chrome">
+   <parameter name="browserName" value="chrome" ></parameter> 
+    
+    <classes>
+    <class name="testrunner.ExtentTestNG">
+      </class>
+    </classes>
+  </test>
+  
+  <test name="LMS_UI_Hackathon_edge">
+   
+    <parameter name="browserName" value="edge" ></parameter>
+    
+    <classes>
+    <class name="testrunner.ExtentTestNG">
+      </class>
+    </classes>
+  </test>
+  
+  <test name="LMS_UI_Hackathon_firefox">
+   
+     <parameter name="browserName" value="firefox" ></parameter> 
+    <classes>
+    <class name="testrunner.ExtentTestNG">
+      </class>
+    </classes>
+  </test>
+  
+  
+</suite>
